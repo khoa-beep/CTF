@@ -1,0 +1,81 @@
+step 1 : 
+=========================================================================================================================
+push    ebp
+mov     ebp, esp
+sub     esp, 1E4h
+push    ebx
+push    esi
+push    edi
+lea     edi, [ebp+var_1E4]
+mov     ecx, 79h
+mov     eax, 0CCCCCCCCh
+rep stosd
+mov     eax, ___security_cookie
+xor     eax, ebp
+mov     [ebp+var_4], eax
+mov     ecx, offset unk_41C004
+call    j_@__CheckForDebuggerJustMyCode@4 ; __CheckForDebuggerJustMyCode(x)
+cmp     [ebp+argc], 3
+jge     short loc_411BAD
+
+Here we can see if it is possible to compare the input parameter whether argc is greater than 3 or not and.
+
+If it is correct then the code will be executed below
+
+loc_411BAD:
+mov     eax, 4
+shl     eax, 0
+mov     ecx, [ebp+argv]
+mov     edx, [ecx+eax]
+push    edx
+call    Read_file_name
+add     esp, 4
+mov     [ebp+num1], eax
+mov     eax, 4
+shl     eax, 1
+mov     ecx, [ebp+argv]
+mov     edx, [ecx+eax]
+push    edx
+call    Read_file_name
+add     esp, 4
+mov     [ebp+num2], eax
+mov     eax, [ebp+num1]
+imul    eax, [ebp+num2]
+push    eax
+push    offset aCalculatedD ; "calculated: %d\n"
+call    j__printf
+add     esp, 8
+mov     eax, [ebp+num1]
+imul    eax, [ebp+num2]
+cmp     eax, 40h ; '@'
+jnz     short loc_411C3A
+
+Here we have some read and calculate functions we can guess here are functions that are used to read the file and compute the result.
+
+push    100h
+push    0
+lea     eax, [ebp+var_120]
+push    eax
+call    j_j_memset
+add     esp, 0Ch
+lea     eax, [ebp+var_120]
+push    eax
+call    sub_4111C2 ; genflag
+add     esp, 4
+lea     eax, [ebp+var_120]
+push    eax
+push    offset aFinalFlagS ; "final flag: %s\n"
+call    j__printf
+add     esp, 8
+
+Let's take a look at the bytes in the IDA we will see
+
+3C 19 0F 1F 3B 2C 3E 03 1B 4C 34 1B 2D 49 4C 2C 48 0A 27 4E 4C 05
+
+B2 : shell code python 
+
+flag = [0x3C ,0x19,0x0F,0x1F,0x3B,0x2C,0x3E,0x03,0x1B,0x4C,0x34,0x1B,0x2D,0x49,0x4C ,0x2C,0x48 ,0x0A ,0x27,0x4E ,0x4C ,0x05]
+flag = [chr(i^0x78) for i in flag]
+print("".join(flag))
+
+and flag : DawgCTF{c4LcU14T0r_64}
