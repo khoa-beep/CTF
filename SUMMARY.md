@@ -27,4 +27,5 @@
 
 * [Reverse Engineering](knowledge/reverse-engineering/README.md)
   * [x64 DBG](knowledge/reverse-engineering/x64-dbg.md)
+  * [Thử thách Crackme 1 \( Very Easy\)](knowledge/reverse-engineering/thu-thach-crackme-1-very-easy.md)
 

@@ -56,7 +56,7 @@ Ta được flag : DH{I\_am\_X0\_xo\_Xor\_eXcit1ng}
 
 Đem cái pass ta vừa tìm được và  thử đăng nhập vào xem
 
-![](../../.gitbook/assets/image%20%284%29.png)
+![](../../.gitbook/assets/image%20%286%29.png)
 
 Kết quả là ta đã truy cập vào thành công
 
