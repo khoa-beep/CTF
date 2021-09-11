@@ -173,6 +173,41 @@ Khi được thực thi tối đa, giá trị tính bằng rax là gì ?
 
 
 
+Phép toán số học❌
+
+add dst, src: Thêm giá trị của src vào dst.
+
+
+
+| add eax, 3 | eax += 3 |
+| :--- | :--- |
+| add ax, WORD PTR\[rdi\] | ax += \*\(WORD \*\)rdi |
+| sub eax,3 | eax = eax - 3 |
+| sub ax, WORD PTR\[rdi\] | ax -= _\(WORD_ \)rdi |
+| inc eax | eax += 1 |
+| dec eax | eax -= 1 |
+
+
+
+```text
+[Register]
+rax = 0x31337
+rbx = 0x555555554000
+rcx = 0x2
+=================================
+[Memory]
+0x555555554000| 0x0000000000000000
+0x555555554008| 0x0000000000000001
+0x555555554010| 0x0000000000000003
+0x555555554018| 0x0000000000000005
+0x555555554020| 0x000000000003133A
+==================================[Code]
+1: add rax, [rbx+rcx*8]
+2: add rcx, 2
+3: sub rax, [rbx+rcx*8]
+4: inc rax
+```
+
 
 
 
