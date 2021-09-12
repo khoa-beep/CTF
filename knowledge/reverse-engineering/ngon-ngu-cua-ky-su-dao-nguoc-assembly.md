@@ -153,12 +153,12 @@ Thay thế rbx + 8 \* rcx thành rsi
 
 
 ```text
-[Memory]0x401a40 
-| 0x00000000123456780x401a48
-| 0x0000000000C0FFEE0x401a50 
-| 0x00000000DEADBEEF0x401a58 
-| 0x00000000CAFEBABE0x401a60 
-| 0x0000000087654321
+[Memory]
+0x401a40 | 0x0000000012345678
+0x401a48 | 0x0000000000C0FFEE
+0x401a50 | 0x00000000DEADBEEF
+0x401a58 | 0x00000000CAFEBABE
+0x401a60 | 0x0000000087654321
  =================================
  [Code]
  1: mov rax, [rbx+8]
@@ -207,6 +207,42 @@ rcx = 0x2
 3: sub rax, [rbx+rcx*8]
 4: inc rax
 ```
+
+Code 1 :  Gía trị Rax sẽ tính như sau
+
+
+
+```cpp
+add rax, [rbx+rcx*8] 
+// rax = 0x31337 + [0x555555554000+0x2+8]  // thay dau * thanh cong
+// rax = 0x31337 + [0x555555554002+8]   // 0x5555555540010 
+// ta có giá trị tính toán tại địa chỉ bộ nhớ là bằng 0x5555555540010 cho nên giá trị tại vùng nhớ đó là
+// 0x0000000000000003
+// ta lấy 0x0000000000000003 + 0x31337 = 0x3133a
+// như vậy rax = 0x3133a
+```
+
+Code 3 : Gía trị Rax tính như sau
+
+```cpp
+sub rax, [rbx+rcx*8]
+// rax = 0x3133a+ [0x555555554010+0x2+8]  // thay dau * thanh cong
+// rax = 0x3133a+ [0x555555554012+8]   // 0x5555555540020 
+// ta có giá trị tính toán tại địa chỉ bộ nhớ là bằng 0x5555555540020 cho nên giá trị tại vùng nhớ đó là
+//  0x000000000003133A
+// ta lấy  0x3133a - 0x000000000003133A= 0
+// như vậy rax = 0
+```
+
+Code 4 : Gía trị Rax như sau
+
+Bạn hãy test thử xem ra giá trị bao nhiêu hãy nhắn qua maill mình nha 
+
+Email : khosasuke@gmail.com.
+
+Còn Một vài toán hạng khác bạn có thể tham khảo thêm 2 loại toán hạng nữa là AND và OR tại Link này.
+
+{% embed url="https://www.tutorialspoint.com/assembly\_programming/assembly\_logical\_instructions.htm" %}
 
 
 
