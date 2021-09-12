@@ -244,7 +244,173 @@ Còn Một vài toán hạng khác bạn có thể tham khảo thêm 2 loại to
 
 {% embed url="https://www.tutorialspoint.com/assembly\_programming/assembly\_logical\_instructions.htm" %}
 
+#### Lệnh So sánh trong hợp ngữ
 
 
 
+Lệnh cmp là lệnh so sánh nó như việc so sánh hai toán hạng với nhau.
+
+Ta sẽ hiểu rõ lệnh này thông qua vài ví dụ.
+
+Ta có ct so sánh đơn giản như này được viết bằng c
+
+```cpp
+#include <stdio.h>
+ 
+/* function declaration */
+int max(int num1, int num2);
+ 
+int main () {
+
+   /* local variable definition */
+   int a = 100;
+   int b = 200;
+   int ret;
+ 
+   /* calling a function to get max value */
+   ret = max(a, b);
+ 
+   printf( "Max value is : %d\n", ret );
+ 
+   return 0;
+}
+ 
+/* function returning the max between two numbers */
+int max(int num1, int num2) {
+
+   /* local variable declaration */
+   int result;
+ 
+   if (num1 > num2)
+      result = num1;
+   else
+      result = num2;
+ 
+   return result; 
+}
+```
+
+Sau khi biên dịch sang mã hợp ngữ
+
+```cpp
+main:
+        push    rbp
+        mov     rbp, rsp
+        sub     rsp, 16
+        mov     DWORD PTR [rbp-4], 100
+        mov     DWORD PTR [rbp-8], 200
+        mov     edx, DWORD PTR [rbp-8]
+        mov     eax, DWORD PTR [rbp-4]
+        mov     esi, edx
+        mov     edi, eax
+        call    max(int, int)
+        mov     DWORD PTR [rbp-12], eax
+        mov     eax, DWORD PTR [rbp-12]
+        mov     esi, eax
+        mov     edi, OFFSET FLAT:.LC0
+        mov     eax, 0
+        call    printf
+        mov     eax, 0
+        leave
+        ret
+max(int, int):
+        push    rbp
+        mov     rbp, rsp
+        mov     DWORD PTR [rbp-20], edi
+        mov     DWORD PTR [rbp-24], esi
+        mov     eax, DWORD PTR [rbp-20]
+        cmp     eax, DWORD PTR [rbp-24]
+        jle     .L4
+        mov     eax, DWORD PTR [rbp-20]
+        mov     DWORD PTR [rbp-4], eax
+        jmp     .L5
+.L4:
+        mov     eax, DWORD PTR [rbp-24]
+        mov     DWORD PTR [rbp-4], eax
+.L5:
+        mov     eax, DWORD PTR [rbp-4]
+        pop     rbp
+        ret
+```
+
+Sau khi biên dịch ta thấy được đây là mã lắp ráp.
+
+Mình sẽ giải thích cho các bạn từng dòng lệnh.
+
+Dòng lệnh này thiết lập stack frame
+
+```cpp
+        push    rbp
+        mov     rbp, rsp
+        sub     rsp, 16
+```
+
+Phân tích hàm main.
+
+
+
+```cpp
+        mov     DWORD PTR [rbp-4], 100
+        mov     DWORD PTR [rbp-8], 200
+        mov     edx, DWORD PTR [rbp-8]
+        mov     eax, DWORD PTR [rbp-4]
+        mov     esi, edx
+        mov     edi, eax
+```
+
+Lệnh di chuyển dữ liệu mov
+
+mov DWORD PRT \[rbp-4\],100 
+
+lệnh này di chuyên 100 vào vùng nhớ stack
+
+lệnh tiếp cũng tương tự
+
+ta đến lệnh mov edx, DWORD PTR \[rbp-8\] nó sẽ di chuyển dữ liệu tại vùng nhớ đó vào edx \( lệnh tiếp theo tương tự \)
+
+
+
+```cpp
+call    max(int, int)
+```
+
+Lệnh call max gọi hàm tìm max.
+
+Vào phân tích tìm max.
+
+
+
+```cpp
+max(int, int):
+        push    rbp
+        mov     rbp, rsp
+        mov     DWORD PTR [rbp-20], edi     => bien a = 100
+        mov     DWORD PTR [rbp-24], esi     => bien b = 200
+        mov     eax, DWORD PTR [rbp-20]     => eax = bien a
+        cmp     eax, DWORD PTR [rbp-24]     => so sanh bien a voi bien b
+        jle     .L4                         => jle ( neu a nho hon b ) nhay den l4
+        mov     eax, DWORD PTR [rbp-20]     => ( cho nay lon hon thi thuc hien )  eax = a 
+        mov     DWORD PTR [rbp-4], eax      => result = a
+        jmp     .L5
+.L4:
+        mov     eax, DWORD PTR [rbp-24]     => eax = b 
+        mov     DWORD PTR [rbp-4], eax      => tai vung nho nay no gan lai ket qua thi chac bien result = b
+.L5:
+        mov     eax, DWORD PTR [rbp-4]      => eax = result
+        pop     rbp                         => ket thuc qua trinh thuc thi
+        ret                                 => ket qua tra lai eax la bien result
+```
+
+Hàm này thi chăc printf rồi nên không cần bận tâm lắm.
+
+```cpp
+        mov     DWORD PTR [rbp-12], eax
+        mov     eax, DWORD PTR [rbp-12]
+        mov     esi, eax
+        mov     edi, OFFSET FLAT:.LC0
+        mov     eax, 0
+        call    printf
+```
+
+Qua đây thì mình đã cho các bạn hiểu được mã hợp ngữ và mã c nó hoạt động ra sao
 
