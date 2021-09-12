@@ -414,3 +414,7 @@ Hàm này thi chăc printf rồi nên không cần bận tâm lắm.
 
 Qua đây thì mình đã cho các bạn hiểu được mã hợp ngữ và mã c nó hoạt động ra sao
 
+#### 
+
+
+
