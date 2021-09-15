@@ -60,5 +60,5 @@ Trước đó mình vẫn chưa hiểu giá trị trả về của hàm GetDrive
 | **DRIVE\_CDROM**5 |  The drive is a CD-ROM drive. |
 | **DRIVE\_RAMDISK**6 |  The drive is a RAM disk. |
 
-Sau khi tìm kiếm được thông tin trong bảng này thì 
+
 
