@@ -40,6 +40,10 @@ Ta tiếp trace qua tới câu lệnh so sánh
 
 Để ý thanh ghi eax mang giá trị 000000001 và esi mang gia trị 00401003 như vậy muốn câu lệnh này nhảy xuống thông báo tốt thì 2 thanh ghi phải bằng nhau.
 
+Như vậy như tính toán của ta thì lúc đầu eax = 00000000003 thì qua tính toán thì nếu trance xuống lệnh cmp thì eax = 00000000001 như vậy eax sẽ bị mất đi 2 giá trị cuối cùng. Và thanh ghi esi sẽ là sẽ được tăng lên 4 . Vậy ta rút ra được là nếu muốn đến thông báo "Ok, I really think that your HD is a CD-ROM! :p" thì ta phải chỉnh eax = 0000000000005 và esi = 000000000000 thì lúc này ta trance qua đến lệnh cmp thì 2 giá trị bằng nhau và ta sẽ patch nó là được.
+
+Bạn tìm hiểu Thêm thông tin hàm GetDriveTypeA.
+
 Ok vậy chỗ khi gọi hàm "call GetDriveTypeA" 
 
 Trước đó mình vẫn chưa hiểu giá trị trả về của hàm GetDriveTypeA. Thử search gg xem
