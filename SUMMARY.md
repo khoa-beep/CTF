@@ -4,6 +4,8 @@
 
 ## CTF <a id="ctf-1"></a>
 
+* [Cor CTF](ctf-1/cor-ctf/README.md)
+  * [rev/babyrev](ctf-1/cor-ctf/rev-babyrev.md)
 * [GrabCON 2021](ctf-1/grabcon-2021/README.md)
   * [Rustry](ctf-1/grabcon-2021/rustry.md)
   * [Unknown 2 - Reversing - 150 points](ctf-1/grabcon-2021/unknown-2-reversing-150-points.md)

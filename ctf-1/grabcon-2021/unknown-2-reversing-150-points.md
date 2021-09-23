@@ -63,7 +63,7 @@ ___.          .__
 Comparison is the death of joy.
 ```
 
-![](../../.gitbook/assets/image%20%2833%29.png)
+![](../../.gitbook/assets/image%20%2835%29.png)
 
 Phân tích dựa trên Ghidra
 
@@ -79,11 +79,11 @@ Tôi thực sự không biết so sánh là gì và thay vì bối rối trong v
 
 
 
-![](../../.gitbook/assets/image%20%2831%29.png)
+![](../../.gitbook/assets/image%20%2832%29.png)
 
 Bây giờ nó muốn một mật khẩu. Tôi không biết mật khẩu mà nó mong đợi là gì nhưng sau khi xem xét xung quanh hàm main.one, tôi bắt gặp một so sánh khác:
 
-![](../../.gitbook/assets/image%20%2834%29.png)
+![](../../.gitbook/assets/image%20%2836%29.png)
 
 Sau một số thử nghiệm và gặp lỗi trong gdb, tôi xác nhận rằng mã đang tổng hợp các giá trị ascii của các ký tự của mật khẩu. Nếu tổng tổng các ký tự bằng 0x195 thì kiểm tra này thành công. Lưu ý bên dưới cách tôi lần đầu tiên nhìn thấy điều này. Khi tôi gửi mật khẩu A thì so sánh là 0x195 == 0x41?
 

@@ -10,7 +10,7 @@ Wrong! Try Again ...
 
 ```
 
-![](../../.gitbook/assets/image%20%2832%29.png)
+![](../../.gitbook/assets/image%20%2834%29.png)
 
 Sử Dụng Ghidra phân tích code .
 
