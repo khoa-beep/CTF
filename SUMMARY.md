@@ -48,3 +48,7 @@
 
 * [Tài Liệu SQL](sql/untitled.md)
 
+## Python
+
+* [Untitled](python/untitled.md)
+
