@@ -49,7 +49,7 @@
 
 * [Tài Liệu SQL](sql/untitled.md)
 
-## Python
+## Blog dạo
 
-* [Untitled](python/untitled.md)
+* [Phương Pháp Học Tập](blog-dao/untitled.md)
 
