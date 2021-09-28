@@ -4,6 +4,7 @@
 
 ## CTF <a id="ctf-1"></a>
 
+* [BUUCTF](ctf-1/buuctf.md)
 * [Cor CTF](ctf-1/cor-ctf/README.md)
   * [rev/babyrev](ctf-1/cor-ctf/rev-babyrev.md)
 * [GrabCON 2021](ctf-1/grabcon-2021/README.md)
@@ -51,8 +52,4 @@
 ## Python
 
 * [Untitled](python/untitled.md)
-
----
-
-* [BUUCTF](buuctf.md)
 
