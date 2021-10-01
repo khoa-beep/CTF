@@ -5,6 +5,7 @@
 ## CTF <a id="ctf-1"></a>
 
 * [Tamil CTF](ctf-1/buuctf/README.md)
+  * [foolme](ctf-1/buuctf/foolme.md)
   * [Eezy](ctf-1/buuctf/eezy.md)
   * [Obscure - Reversing](ctf-1/buuctf/obscure-reversing.md)
 * [Cor CTF](ctf-1/cor-ctf/README.md)
