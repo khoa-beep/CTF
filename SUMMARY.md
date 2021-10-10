@@ -2,7 +2,7 @@
 
 * [Well To Come Cyber Hacking](README.md)
 
-## CTF <a id="ctf-1"></a>
+## CTF <a href="ctf-1" id="ctf-1"></a>
 
 * [Tamil CTF](ctf-1/buuctf/README.md)
   * [foolme](ctf-1/buuctf/foolme.md)
@@ -45,8 +45,9 @@
   * [Ngôn ngữ của kỹ sư đảo ngược: Assembly](knowledge/reverse-engineering/ngon-ngu-cua-ky-su-dao-nguoc-assembly.md)
   * [Windows Memory Layout](knowledge/reverse-engineering/windows-memory-layout.md)
   * [x64 DBG](knowledge/reverse-engineering/x64-dbg.md)
-  * [Thử thách Crackme 1 \( Very Easy\)](knowledge/reverse-engineering/thu-thach-crackme-1-very-easy.md)
+  * [Thử thách Crackme 1 ( Very Easy)](knowledge/reverse-engineering/thu-thach-crackme-1-very-easy.md)
   * [PATCH](knowledge/reverse-engineering/patch.md)
+  * [Page 1](knowledge/reverse-engineering/page-1.md)
 
 ## SQL
 
@@ -55,4 +56,3 @@
 ## Blog dạo
 
 * [Phương Pháp Học Tập](blog-dao/untitled.md)
-
