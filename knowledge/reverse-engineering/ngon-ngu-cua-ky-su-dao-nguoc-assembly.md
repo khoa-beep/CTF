@@ -6,7 +6,7 @@ Nhưng vấn đề là ngôn ngữ máy, ngôn ngữ của máy tính, rất kh�
 
 
 
-![](../../.gitbook/assets/image%20%289%29.png)
+![](<../../.gitbook/assets/image (9).png>)
 
 May mắn thay, ngôn ngữ máy là bí truyền, ngay cả đối với các nhà phát triển máy tính ban đầu đang viết mã bằng ngôn ngữ máy. Vì vậy, một trong những nhà khoa học máy tính, David Wheeler, đã phát minh ra Hợp ngữ và Trình lắp ráp trong khi phát triển EDSAC.
 
@@ -26,7 +26,7 @@ Trong hai khóa học tiếp theo của giáo trình này, chúng tôi sẽ gi�
 
 Hợp ngữ
 
-Như đã đề cập trước đó, hợp ngữ là một ngôn ngữ được thay thế cho ngôn ngữ máy của máy tính. Điều này có nghĩa là nếu có nhiều loại ngôn ngữ máy thì cũng phải có nhiều loại hợp ngữ. Và, như tôi đã nói khi giải thích Kiến trúc tập lệnh \(ISA\), có nhiều loại ISA khác nhau được sử dụng trong CPU, chẳng hạn như IA-32, x86-64, ARM và MIPS.
+Như đã đề cập trước đó, hợp ngữ là một ngôn ngữ được thay thế cho ngôn ngữ máy của máy tính. Điều này có nghĩa là nếu có nhiều loại ngôn ngữ máy thì cũng phải có nhiều loại hợp ngữ. Và, như tôi đã nói khi giải thích Kiến trúc tập lệnh (ISA), có nhiều loại ISA khác nhau được sử dụng trong CPU, chẳng hạn như IA-32, x86-64, ARM và MIPS.
 
 Vì vậy, có bao nhiêu hợp ngữ như có chúng. Thế giới x64 có ngôn ngữ hợp ngữ là x64 và thế giới ARM có ngôn ngữ hợp ngữ là ARM. Bạn càng biết nhiều ngôn ngữ này, thì càng tốt. Tuy nhiên, vì chương trình học này nhắm mục tiêu đến kiến ​​trúc x64, chúng tôi sẽ chỉ giới thiệu hợp ngữ x64. Các ngôn ngữ khác sẽ có cơ hội được đề cập chi tiết trong các chương trình giảng dạy khác.
 
@@ -34,11 +34,11 @@ Vì vậy, có bao nhiêu hợp ngữ như có chúng. Thế giới x64 có ngô
 
 Khi bạn đọc một câu, bạn hiểu chủ ngữ là gì, tân ngữ là gì, từ đó đưa ra ý nghĩa ngữ pháp của từ và hiểu được câu. Và đối với hợp ngữ cũng vậy.
 
-Hợp ngữ x64 có cú pháp đơn giản hơn nhiều so với tiếng Hàn mà chúng ta sử dụng. Các câu của chúng bao gồm một lệnh \(Mã hoạt động, Opcode\) tương ứng với một động từ và một toán hạng \(Operand\) tương ứng với một đối tượng.
+Hợp ngữ x64 có cú pháp đơn giản hơn nhiều so với tiếng Hàn mà chúng ta sử dụng. Các câu của chúng bao gồm một lệnh (Mã hoạt động, Opcode) tương ứng với một động từ và một toán hạng (Operand) tương ứng với một đối tượng.
 
 
 
-![](../../.gitbook/assets/image%20%2810%29.png)
+![](<../../.gitbook/assets/image (10).png>)
 
 ### Lệnh 🔫
 
@@ -82,7 +82,7 @@ syscall
 
 Có ba loại toán hạng.
 
-```text
+```
  Giá trị tức thì (Value)
 
  Đăng ký  ( Register )
@@ -90,21 +90,21 @@ Có ba loại toán hạng.
  Kỉ niệm  ( Menmory )
 ```
 
-Toán hạng bộ nhớ được thể hiện như trong \[\] và một PTR chỉ thị kích thước TYPE có thể được thêm vào trước. Ở đây, BYTE, WORD, DWORD và QWORD có thể được sử dụng làm kiểu và kích thước của 1 byte, 2 byte, 4 byte và 8 byte được chỉ định tương ứng.
+Toán hạng bộ nhớ được thể hiện như trong \[] và một PTR chỉ thị kích thước TYPE có thể được thêm vào trước. Ở đây, BYTE, WORD, DWORD và QWORD có thể được sử dụng làm kiểu và kích thước của 1 byte, 2 byte, 4 byte và 8 byte được chỉ định tương ứng.
 
 
 
 ## 👇 Ví dụ về toán hạng bộ nhớ
 
-QWORD PTR \[0x8048000\]
+QWORD PTR \[0x8048000]
 
 Tham chiếu 8 byte dữ liệu ở 0x8048000
 
-DWORD PTR \[0x8048000\]
+DWORD PTR \[0x8048000]
 
 Tham khảo dữ liệu ở 0x8048000 x 4 byte
 
-WORD PTR \[rax\]
+WORD PTR \[rax]
 
 Dữ liệu được tham chiếu bởi 2 byte tại địa chỉ được trỏ tới bởi rax.
 
@@ -118,7 +118,7 @@ Ban đầu, Intel phát triển kiến ​​trúc IA-16, trong đó các WORD c
 
 Các kiến ​​trúc IA-32 và x86-64 được phát triển sau này có CPU WORD được mở rộng lên 32-bit và 64-bit. Do đó, trong hai kiến ​​trúc này, việc chỉ định kích thước của kiểu dữ liệu WORD 32-bit và 64-bit dường như là tự nhiên.
 
-Tuy nhiên, Intel vẫn giữ kích thước của kiểu dữ liệu WORD là 16 bit. Điều này là do, nếu bạn thay đổi kích thước của kiểu dữ liệu WORD, các chương trình hiện có có thể không tương thích với kiến ​​trúc mới. Vì vậy, Intel đã giữ nguyên kích thước của WORD hiện có và thêm các kiểu dữ liệu DWORD \(Double Word, 32bit\) và QWORD \(Quad Word, 64bit\).
+Tuy nhiên, Intel vẫn giữ kích thước của kiểu dữ liệu WORD là 16 bit. Điều này là do, nếu bạn thay đổi kích thước của kiểu dữ liệu WORD, các chương trình hiện có có thể không tương thích với kiến ​​trúc mới. Vì vậy, Intel đã giữ nguyên kích thước của WORD hiện có và thêm các kiểu dữ liệu DWORD (Double Word, 32bit) và QWORD (Quad Word, 64bit).
 
 #### Hướng lắp ráp x86-64
 
@@ -132,17 +132,17 @@ mov rdi, rsi
 
 Thay giá trị của rsi thành rdi
 
-mov QWORD PTR \[rdi\], rsi
+mov QWORD PTR \[rdi], rsi
 
 Gán giá trị của rsi cho địa chỉ được trỏ đến bởi rdi
 
-mov QWORD PTR \[rdi + 8 \* rcx\], rsi
+mov QWORD PTR \[rdi + 8 \* rcx], rsi
 
 Gán giá trị của rsi cho địa chỉ được trỏ tới bởi rdi + 8 \* rcx
 
-lea dst, src: Địa chỉ hiệu dụng \(EA\) của src được lưu trữ trong dst.
+lea dst, src: Địa chỉ hiệu dụng (EA) của src được lưu trữ trong dst.
 
-lea rsi, \[rbx + 8 \* rcx\]
+lea rsi, \[rbx + 8 \* rcx]
 
 Thay thế rbx + 8 \* rcx thành rsi
 
@@ -152,7 +152,7 @@ Thay thế rbx + 8 \* rcx thành rsi
 
 
 
-```text
+```
 [Memory]
 0x401a40 | 0x0000000012345678
 0x401a48 | 0x0000000000C0FFEE
@@ -179,17 +179,17 @@ add dst, src: Thêm giá trị của src vào dst.
 
 
 
-| add eax, 3 | eax += 3 |
-| :--- | :--- |
-| add ax, WORD PTR\[rdi\] | ax += \*\(WORD \*\)rdi |
-| sub eax,3 | eax = eax - 3 |
-| sub ax, WORD PTR\[rdi\] | ax -= _\(WORD_ \)rdi |
-| inc eax | eax += 1 |
-| dec eax | eax -= 1 |
+| add eax, 3             | eax += 3             |
+| ---------------------- | -------------------- |
+| add ax, WORD PTR\[rdi] | ax += \*(WORD \*)rdi |
+| sub eax,3              | eax = eax - 3        |
+| sub ax, WORD PTR\[rdi] | ax -= _(WORD _)rdi   |
+| inc eax                | eax += 1             |
+| dec eax                | eax -= 1             |
 
 
 
-```text
+```
 [Register]
 rax = 0x31337
 rbx = 0x555555554000
@@ -242,7 +242,7 @@ Email : khosasuke@gmail.com.
 
 Còn Một vài toán hạng khác bạn có thể tham khảo thêm 2 loại toán hạng nữa là AND và OR tại Link này.
 
-{% embed url="https://www.tutorialspoint.com/assembly\_programming/assembly\_logical\_instructions.htm" %}
+{% embed url="https://www.tutorialspoint.com/assembly_programming/assembly_logical_instructions.htm" %}
 
 #### Lệnh So sánh trong hợp ngữ
 
@@ -360,13 +360,13 @@ Phân tích hàm main.
 
 Lệnh di chuyển dữ liệu mov
 
-mov DWORD PRT \[rbp-4\],100 
+mov DWORD PRT \[rbp-4],100 
 
 lệnh này di chuyên 100 vào vùng nhớ stack
 
 lệnh tiếp cũng tương tự
 
-ta đến lệnh mov edx, DWORD PTR \[rbp-8\] nó sẽ di chuyển dữ liệu tại vùng nhớ đó vào edx \( lệnh tiếp theo tương tự \)
+ta đến lệnh mov edx, DWORD PTR \[rbp-8] nó sẽ di chuyển dữ liệu tại vùng nhớ đó vào edx ( lệnh tiếp theo tương tự )
 
 
 
@@ -414,7 +414,5 @@ Hàm này thi chăc printf rồi nên không cần bận tâm lắm.
 
 Qua đây thì mình đã cho các bạn hiểu được mã hợp ngữ và mã c nó hoạt động ra sao
 
-#### 
-
-
+####
 

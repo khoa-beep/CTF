@@ -6,7 +6,7 @@ khoa@DESKTOP-L14K8T1:/mnt/c/Users/DELL/Downloads/obscure$ file reverseme.pyc
 
 reverseme.pyc: python 2.7 byte-compiled
 
-Đây là file được biên dịch từ chương trình python \( nó như file .exe vậy \)
+Đây là file được biên dịch từ chương trình python ( nó như file .exe vậy )
 
 ta sẽ sử dụng lệnh : uncompyle6 -o . reverseme.pyc
 
@@ -71,5 +71,4 @@ while(True):
 
 ```
 
-**flag** : TamilCTF{bRuTeF0rCe\_1s\_tHe\_0nLy\_F0rCe\_2\_bReAk\_\_1n}
-
+**flag **: TamilCTF{bRuTeF0rCe\_1s_tHe\_0nLy_F0rCe\_2\_bReAk\_\_1n}

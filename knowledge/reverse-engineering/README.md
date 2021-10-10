@@ -1,7 +1,6 @@
 ---
 description: Note
 ---
-
 # Reverse Engineering
 
 ### 1. Reverse Engineering
@@ -46,7 +45,7 @@ Trong phần mới bắt đầu của chương trình học, bạn sẽ thực h
 
 
 
-Cần phải biên dịch để chuyển đổi mã nguồn có thể đọc được của con người thành một chương trình có thể đọc được trên máy tính \(sau đây được gọi là mã nhị phân\).
+Cần phải biên dịch để chuyển đổi mã nguồn có thể đọc được của con người thành một chương trình có thể đọc được trên máy tính (sau đây được gọi là mã nhị phân).
 
 Chương trình được sử dụng cho quá trình này được gọi là 'trình biên dịch'. Không phải tất cả các ngôn ngữ lập trình đều được biên dịch thành các mã nhị phân thực thi bằng trình biên dịch, nhưng thông thường chúng trải qua quá trình biên dịch để trở thành các mã nhị phân thực thi độc lập.
 
@@ -66,9 +65,9 @@ Kỹ thuật đảo ngược phần mềm thường được gọi là 'đảo n
 
 ![](../../.gitbook/assets/a24ae3b82ea583f8fa0a579edbc2ecf9c2a257adac45215be85a3136f01d5ba3.png)
 
-### **3/** Instructions
+### **3/ **Instructions
 
-#### Instructions\(1/5\) - Data Movement
+#### Instructions(1/5) - Data Movement
 
 
 
@@ -118,23 +117,23 @@ Ví dụ tiếp theo
 
 
 
-## mov rax, \[rbx+8\]  
+## mov rax, \[rbx+8]  
 
-thanh ghi rbx -&gt; _0x401A48 di chyển giá trị 0x00C0FFEE vào rax_
+thanh ghi rbx -> _0x401A48 di chyển giá trị 0x00C0FFEE vào rax_
 
-\_\_
+__
 
-## **lea rax, \[rbx+8\]**
+## **lea rax, \[rbx+8]**
 
-Thanh ghi rbx -&gt; _0x401A48 lấy địa chỉa này vào rax_ 
+Thanh ghi rbx -> _0x401A48 lấy địa chỉa này vào rax _
 
 ## **Data Size**
 
 ![](../../.gitbook/assets/ed56acfa9704c9a1adceb8f3fee606aec16d535aaca17f804a0ffc39cedb72e7.png)
 
-Đơn vị kích thước của giá trị được sử dụng được gọi là WORD. Khi CPU 16-bit lần đầu tiên xuất hiện cách đây rất lâu, 16-bit, là đơn vị giá trị được CPU sử dụng vào thời điểm đó, được gọi là WORD và các thanh ghi đa năng có thể xử lý các đơn vị WORD được đặt tên là ax, cx , dx, bx. là nguồn gốc của tên thanh ghi. Khi thời gian trôi qua và kích thước của các thanh ghi tăng lên theo đơn vị 32 bit \(mở rộng\), tên của các thanh ghi trở thành eax, ecx, edx và ebx. Kể từ đó, tên thanh ghi được sử dụng trong CPU 64-bit giống như chúng ta đã nghiên cứu về thanh ghi trước đó.
+Đơn vị kích thước của giá trị được sử dụng được gọi là WORD. Khi CPU 16-bit lần đầu tiên xuất hiện cách đây rất lâu, 16-bit, là đơn vị giá trị được CPU sử dụng vào thời điểm đó, được gọi là WORD và các thanh ghi đa năng có thể xử lý các đơn vị WORD được đặt tên là ax, cx , dx, bx. là nguồn gốc của tên thanh ghi. Khi thời gian trôi qua và kích thước của các thanh ghi tăng lên theo đơn vị 32 bit (mở rộng), tên của các thanh ghi trở thành eax, ecx, edx và ebx. Kể từ đó, tên thanh ghi được sử dụng trong CPU 64-bit giống như chúng ta đã nghiên cứu về thanh ghi trước đó.
 
-\*\*\*\*
+****
 
 **Link tham khảo các lệnh cờ nhảy**
 
@@ -142,17 +141,16 @@ Thanh ghi rbx -&gt; _0x401A48 lấy địa chỉa này vào rax_
 
 
 
-\*\*\*\*
+****
 
-\_\_
+__
 
-\_\_
+__
 
-\_\_
-
-
+__
 
 
 
-\*\*\*\*
 
+
+****
