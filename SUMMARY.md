@@ -42,6 +42,7 @@
 ## knowledge
 
 * [Reverse Engineering](knowledge/reverse-engineering/README.md)
+  * [Page 1](knowledge/reverse-engineering/page-1.md)
   * [Ngôn ngữ của kỹ sư đảo ngược: Assembly](knowledge/reverse-engineering/ngon-ngu-cua-ky-su-dao-nguoc-assembly.md)
   * [Windows Memory Layout](knowledge/reverse-engineering/windows-memory-layout.md)
   * [x64 DBG](knowledge/reverse-engineering/x64-dbg.md)
