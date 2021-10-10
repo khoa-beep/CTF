@@ -47,7 +47,6 @@
   * [x64 DBG](knowledge/reverse-engineering/x64-dbg.md)
   * [Thử thách Crackme 1 ( Very Easy)](knowledge/reverse-engineering/thu-thach-crackme-1-very-easy.md)
   * [PATCH](knowledge/reverse-engineering/patch.md)
-  * [Page 1](knowledge/reverse-engineering/page-1.md)
 
 ## SQL
 
