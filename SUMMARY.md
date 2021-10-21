@@ -4,7 +4,6 @@
 
 ## CTF <a href="ctf-1" id="ctf-1"></a>
 
-* [PICO CTF 2019](ctf-1/pico-ctf-2019.md)
 * [Tamil CTF](ctf-1/buuctf/README.md)
   * [foolme](ctf-1/buuctf/foolme.md)
   * [Eezy](ctf-1/buuctf/eezy.md)
@@ -18,6 +17,10 @@
   * [Babay Rev](ctf-1/grabcon-2021/babay-rev.md)
 * [ReCTF](ctf-1/rectf.md)
 * [RaRCTF](ctf-1/untitled-1.md)
+* [picoCTF 2019](ctf-1/picoctf-2019/README.md)
+  * [vault-door-training](ctf-1/picoctf-2019/vault-door-training.md)
+  * [vault-door-1](ctf-1/picoctf-2019/vault-door-1.md)
+  * [vault-door-3](ctf-1/picoctf-2019/vault-door-3.md)
 
 ## Wargame
 
