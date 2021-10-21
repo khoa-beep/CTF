@@ -21,6 +21,7 @@
   * [vault-door-training](ctf-1/picoctf-2019/vault-door-training.md)
   * [vault-door-1](ctf-1/picoctf-2019/vault-door-1.md)
   * [vault-door-3](ctf-1/picoctf-2019/vault-door-3.md)
+  * [vault-door-4](ctf-1/picoctf-2019/vault-door-4.md)
 
 ## Wargame
 
