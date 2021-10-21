@@ -4,6 +4,7 @@
 
 ## CTF <a href="ctf-1" id="ctf-1"></a>
 
+* [PICO CTF 2019](ctf-1/pico-ctf-2019.md)
 * [Tamil CTF](ctf-1/buuctf/README.md)
   * [foolme](ctf-1/buuctf/foolme.md)
   * [Eezy](ctf-1/buuctf/eezy.md)
@@ -42,15 +43,11 @@
 ## knowledge
 
 * [Reverse Engineering](knowledge/reverse-engineering/README.md)
-  * [Page 1](knowledge/reverse-engineering/page-1.md)
-  * [Page 1](knowledge/reverse-engineering/page-1-1.md)
   * [Ngôn ngữ của kỹ sư đảo ngược: Assembly](knowledge/reverse-engineering/ngon-ngu-cua-ky-su-dao-nguoc-assembly.md)
   * [Windows Memory Layout](knowledge/reverse-engineering/windows-memory-layout.md)
   * [x64 DBG](knowledge/reverse-engineering/x64-dbg.md)
   * [Thử thách Crackme 1 ( Very Easy)](knowledge/reverse-engineering/thu-thach-crackme-1-very-easy.md)
   * [PATCH](knowledge/reverse-engineering/patch.md)
-  * [Page 1](knowledge/reverse-engineering/page-1-2.md)
-  * [Page 1](knowledge/reverse-engineering/page-1-3.md)
 
 ## SQL
 

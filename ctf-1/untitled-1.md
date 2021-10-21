@@ -90,9 +90,9 @@ code keygen
 
 while(i < 126)
 
- s\[i] ^= s\[i+1]
+&#x20;s\[i] ^= s\[i+1]
 
- i++
+&#x20;i++
 
 sau cùng nó sẽ kiêm tra giá trị trả về vào memset đúng hay không.
 
@@ -104,15 +104,15 @@ Ta phát hiện trong bộ nhớ s có một sô byte.
 
 Có lẽ ta sẽ đem theo tất cả byte này đi xor rồi in ra kết quả xem sao
 
-byte_xor **=** list**(b"\x13\x13\x11\x17\x12\x1d\x48\x45\x45\x41\x0b\x26\x2c\x42\x5f\x09\x0b\x5f\x6c\x3d\x56\x56\x1b\x54\x5f\x41\x45\x29\x3c\x0b\x5c\x58\x00\x5f\x5d\x09\x54\x6c\x2a\x40\x06\x06\x6a\x27\x48\x42\x5f\x4b\x56\x42\x2d\x2c\x43\x5d\x5e\x6c\x2d\x41\x07\x47\x43\x5e\x31\x6b\x5a\x0a\x3b\x6e\x1c\x49\x54\x5e\x1a\x2b\x34\x05\x5e\x47\x28\x28\x1f\x11\x26\x3b\x07\x50\x04\x06\x04\x0d\x0b\x05\x03\x48\x77\x0a")**\
+byte\_xor **=** list**(b"\x13\x13\x11\x17\x12\x1d\x48\x45\x45\x41\x0b\x26\x2c\x42\x5f\x09\x0b\x5f\x6c\x3d\x56\x56\x1b\x54\x5f\x41\x45\x29\x3c\x0b\x5c\x58\x00\x5f\x5d\x09\x54\x6c\x2a\x40\x06\x06\x6a\x27\x48\x42\x5f\x4b\x56\x42\x2d\x2c\x43\x5d\x5e\x6c\x2d\x41\x07\x47\x43\x5e\x31\x6b\x5a\x0a\x3b\x6e\x1c\x49\x54\x5e\x1a\x2b\x34\x05\x5e\x47\x28\x28\x1f\x11\x26\x3b\x07\x50\x04\x06\x04\x0d\x0b\x05\x03\x48\x77\x0a")**\
 ****flag **= "r"** # ky tu bat buoc trong dieu kien\
 char **= "r"** # su dung nay de dao chuoi lai\
-**for** i **in** byte_xor**:**\
+**for** i **in** byte\_xor**:**\
 **** flag **+=** chr**(**ord**(**char**)^**i**)** # dem y tu dao di xor voi cac byte trong danh sach\
- char **=** flag**\[-**1**]** # dao chuoi\
+&#x20;char **=** flag**\[-**1**]** # dao chuoi\
 print**(**flag**)**
 
-flag rarctf{3v3ry_s1ngl3\_b4by-r3v_ch4ll3ng3\_u535\_x0r-f0r_s0m3\_r34s0n\_4nd\_1-d0nt_kn0w_why_dc37158365}
+flag rarctf{3v3ry\_s1ngl3\_b4by-r3v\_ch4ll3ng3\_u535\_x0r-f0r\_s0m3\_r34s0n\_4nd\_1-d0nt\_kn0w\_why\_dc37158365}
 
 Bài Dotty
 
@@ -135,19 +135,19 @@ Bài này ta kiểm tra loại file Dotty.exe: PE32 executable (console) Intel 8
 Ta thử load vào tool dnspy xem
 
 private static void Main(string\[] **args**)\
-        {\
-            Console.Write("Please enter your secret to encode: ");\
-            string phrase = Console.ReadLine();\
-            string text = Program.Dotter(phrase);\
-            if (text == Check.check)\
-            {\
-                Console.WriteLine("That's the right secret!");\
-            }\
-            else\
-            {\
-                Console.WriteLine(text);\
-            }\
-        }
+&#x20;       {\
+&#x20;           Console.Write("Please enter your secret to encode: ");\
+&#x20;           string phrase = Console.ReadLine();\
+&#x20;           string text = Program.Dotter(phrase);\
+&#x20;           if (text == Check.check)\
+&#x20;           {\
+&#x20;               Console.WriteLine("That's the right secret!");\
+&#x20;           }\
+&#x20;           else\
+&#x20;           {\
+&#x20;               Console.WriteLine(text);\
+&#x20;           }\
+&#x20;       }
 
 Đây là là đoạn code c# ta có thể hiểu là nó sẽ kiểm tra cái gì đó trong điều kiện check ta thử vào check xem sao
 
@@ -165,7 +165,7 @@ T|H|E|/|F|L|A|G|/|I|S|/|O|J|Q|X|E|Y| 3|U|M|Z| 5|W|I|M|L|E|L| 5| 4|T|A| 5|K| 7|O|
 
 Flag nó là base 32 đem mã OJQXEY3UMZ5WIMLEL54TA5K7OAZTG227GBZF6NLQPE7T6PZ7L5TGCNDBMM3DANL5 BASE32
 
-Ra flag : rarctf{d1d_y0u_p33k\_0r\_5py????\_fa4ac605}
+Ra flag : rarctf{d1d\_y0u\_p33k\_0r\_5py????\_fa4ac605}
 
 Bài 3
 
@@ -199,20 +199,20 @@ Thử code ham đi xor bình thường trong chuỗi này xem ta được gì
 
 import string
 
-xor_check = \[0x09, 0x16, 0x17, 0x0f, 0x17, 0x56, 0x16, 0x44, 0x3a, 0x18, 0x53, 0x6f, 0x14, 0x03, 0x2a, 0x06, 0x6f, 0x31, 0x1c, 0x47, 0x2a, 0x06, 0x2d, 0x5f, 0x51, 0x1b, 0x00, 0x46, 0x4a, 0x00, 0x04, 0x55, 0x66, 0x50, 0x01, 0x4c]
+xor\_check = \[0x09, 0x16, 0x17, 0x0f, 0x17, 0x56, 0x16, 0x44, 0x3a, 0x18, 0x53, 0x6f, 0x14, 0x03, 0x2a, 0x06, 0x6f, 0x31, 0x1c, 0x47, 0x2a, 0x06, 0x2d, 0x5f, 0x51, 0x1b, 0x00, 0x46, 0x4a, 0x00, 0x04, 0x55, 0x66, 0x50, 0x01, 0x4c]
 
 flag = "rarctf"
 
-for i in range(len(xor_check)):
+for i in range(len(xor\_check)):
 
-    for fc in string.printable:
+&#x20;   for fc in string.printable:
 
-        if ord(flag\[i]) ^ ord(fc) == xor_check\[i]:
+&#x20;       if ord(flag\[i]) ^ ord(fc) == xor\_check\[i]:
 
-            flag += fc
+&#x20;           flag += fc
 
 print(flag)
 
 Ra flag
 
-rarctf{welc0m3\_t0\_y0ur_new_tr14l\_281099b9}
+rarctf{welc0m3\_t0\_y0ur\_new\_tr14l\_281099b9}
