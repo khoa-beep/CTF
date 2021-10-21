@@ -22,6 +22,8 @@
   * [vault-door-1](ctf-1/picoctf-2019/vault-door-1.md)
   * [vault-door-3](ctf-1/picoctf-2019/vault-door-3.md)
   * [vault-door-4](ctf-1/picoctf-2019/vault-door-4.md)
+  * [asm1](ctf-1/picoctf-2019/asm1.md)
+  * [asm2](ctf-1/picoctf-2019/asm2.md)
 
 ## Wargame
 
