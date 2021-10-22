@@ -65,3 +65,7 @@
 ## Blog dạo
 
 * [Phương Pháp Học Tập](blog-dao/untitled.md)
+
+## Group 1
+
+* [Python Language](group-1/python-language.md)
