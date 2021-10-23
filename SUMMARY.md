@@ -64,6 +64,7 @@
 
 ## Blog dạo
 
+* [Tìm hiểu Red Team và Blue Team](blog-dao/tim-hieu-red-team-va-blue-team.md)
 * [Phương Pháp Học Tập](blog-dao/untitled.md)
 
 ## Python
