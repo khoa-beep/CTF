@@ -70,3 +70,7 @@
 ## Python
 
 * [Python Language](python/python-language.md)
+
+## Practial binary
+
+* [ANATOMY OF A BINARY](practial-binary/anatomy-of-a-binary.md)

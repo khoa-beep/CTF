@@ -12,7 +12,7 @@ file thứ 2 là elf nhị phân linux
 
 Ta mở vào IDA và f5 xem chương trình là gì.
 
-![](<../../.gitbook/assets/image (41).png>)
+![](<../../.gitbook/assets/image (41) (1).png>)
 
 Hàm này sẽ có các nhiệm vụ sau :
 
