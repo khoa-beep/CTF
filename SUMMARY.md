@@ -48,6 +48,7 @@
   * [Awesome CTF](blog-cyber/untitled/awesome-ctf.md)
   * [Re for beginer](blog-cyber/untitled/re-for-beginer.md)
   * [KienManowar](blog-cyber/untitled/kienmanowar.md)
+* [🚩 Complete Beginner](blog-cyber/complete-beginner.md)
 
 ## knowledge
 
