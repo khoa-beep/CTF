@@ -2,7 +2,7 @@
 
 * [Well To Come Cyber Hacking](README.md)
 
-## CTF <a href="ctf-1" id="ctf-1"></a>
+## CTF <a href="#ctf-1" id="ctf-1"></a>
 
 * [Tamil CTF](ctf-1/buuctf/README.md)
   * [foolme](ctf-1/buuctf/foolme.md)
@@ -58,6 +58,8 @@
   * [x64 DBG](knowledge/reverse-engineering/x64-dbg.md)
   * [Thử thách Crackme 1 ( Very Easy)](knowledge/reverse-engineering/thu-thach-crackme-1-very-easy.md)
   * [PATCH](knowledge/reverse-engineering/patch.md)
+* [PWN FOR BEGINER](knowledge/pwn-for-beginer/README.md)
+  * [Untitled](knowledge/pwn-for-beginer/untitled.md)
 
 ## SQL
 
