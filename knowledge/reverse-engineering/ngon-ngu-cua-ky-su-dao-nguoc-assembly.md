@@ -165,11 +165,11 @@ Thay thế rbx + 8 \* rcx thành rsi
  2: lea rax, [rbx+8]
 ```
 
-Đọc và trả lời 
+Đọc và trả lời&#x20;
 
-Khi thực thi tối đa 1, giá trị được lưu trữ trong rax là  gì ? 
+Khi thực thi tối đa 1, giá trị được lưu trữ trong rax là  gì ?&#x20;
 
-Khi được thực thi tối đa, giá trị tính bằng rax là gì ? 
+Khi được thực thi tối đa, giá trị tính bằng rax là gì ?&#x20;
 
 
 
@@ -183,7 +183,7 @@ add dst, src: Thêm giá trị của src vào dst.
 | ---------------------- | -------------------- |
 | add ax, WORD PTR\[rdi] | ax += \*(WORD \*)rdi |
 | sub eax,3              | eax = eax - 3        |
-| sub ax, WORD PTR\[rdi] | ax -= _(WORD _)rdi   |
+| sub ax, WORD PTR\[rdi] | ax -= _(WORD_ )rdi   |
 | inc eax                | eax += 1             |
 | dec eax                | eax -= 1             |
 
@@ -236,7 +236,7 @@ sub rax, [rbx+rcx*8]
 
 Code 4 : Gía trị Rax như sau
 
-Bạn hãy test thử xem ra giá trị bao nhiêu hãy nhắn qua maill mình nha 
+Bạn hãy test thử xem ra giá trị bao nhiêu hãy nhắn qua maill mình nha&#x20;
 
 Email : khosasuke@gmail.com.
 
@@ -360,7 +360,7 @@ Phân tích hàm main.
 
 Lệnh di chuyển dữ liệu mov
 
-mov DWORD PRT \[rbp-4],100 
+mov DWORD PRT \[rbp-4],100&#x20;
 
 lệnh này di chuyên 100 vào vùng nhớ stack
 

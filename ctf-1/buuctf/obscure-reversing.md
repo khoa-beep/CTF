@@ -2,7 +2,7 @@
 
 Ta tải file thử thách và phân tích.
 
-khoa@DESKTOP-L14K8T1:/mnt/c/Users/DELL/Downloads/obscure$ file reverseme.pyc 
+khoa@DESKTOP-L14K8T1:/mnt/c/Users/DELL/Downloads/obscure$ file reverseme.pyc&#x20;
 
 reverseme.pyc: python 2.7 byte-compiled
 
@@ -71,4 +71,4 @@ while(True):
 
 ```
 
-**flag **: TamilCTF{bRuTeF0rCe\_1s_tHe\_0nLy_F0rCe\_2\_bReAk\_\_1n}
+**flag** : TamilCTF{bRuTeF0rCe\_1s\_tHe\_0nLy\_F0rCe\_2\_bReAk\_\_1n}

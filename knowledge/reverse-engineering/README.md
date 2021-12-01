@@ -1,6 +1,7 @@
 ---
 description: Note
 ---
+
 # Reverse Engineering
 
 ### 1. Reverse Engineering
@@ -65,7 +66,7 @@ Kỹ thuật đảo ngược phần mềm thường được gọi là 'đảo n
 
 ![](../../.gitbook/assets/a24ae3b82ea583f8fa0a579edbc2ecf9c2a257adac45215be85a3136f01d5ba3.png)
 
-### **3/ **Instructions
+### **3/** Instructions
 
 #### Instructions(1/5) - Data Movement
 
@@ -75,15 +76,15 @@ Kỹ thuật đảo ngược phần mềm thường được gọi là 'đảo n
 
 
 
- **mov**
+&#x20;**mov**
 
-Lệnh di chuyển dữ liệu 
+Lệnh di chuyển dữ liệu&#x20;
 
 
 
 ## Lea
 
-Lệnh lấy địa chỉ 
+Lệnh lấy địa chỉ&#x20;
 
 
 
@@ -117,7 +118,7 @@ Ví dụ tiếp theo
 
 
 
-## mov rax, \[rbx+8]  
+## mov rax, \[rbx+8] &#x20;
 
 thanh ghi rbx -> _0x401A48 di chyển giá trị 0x00C0FFEE vào rax_
 
@@ -125,7 +126,7 @@ __
 
 ## **lea rax, \[rbx+8]**
 
-Thanh ghi rbx -> _0x401A48 lấy địa chỉa này vào rax _
+Thanh ghi rbx -> _0x401A48 lấy địa chỉa này vào rax_&#x20;
 
 ## **Data Size**
 

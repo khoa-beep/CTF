@@ -48,7 +48,6 @@
   * [Awesome CTF](blog-cyber/untitled/awesome-ctf.md)
   * [Re for beginer](blog-cyber/untitled/re-for-beginer.md)
   * [KienManowar](blog-cyber/untitled/kienmanowar.md)
-* [🚩 Complete Beginner](blog-cyber/complete-beginner.md)
 
 ## knowledge
 
@@ -59,7 +58,8 @@
   * [Thử thách Crackme 1 ( Very Easy)](knowledge/reverse-engineering/thu-thach-crackme-1-very-easy.md)
   * [PATCH](knowledge/reverse-engineering/patch.md)
 * [PWN FOR BEGINER](knowledge/pwn-for-beginer/README.md)
-  * [Untitled](knowledge/pwn-for-beginer/untitled.md)
+  * [PWN Baby](knowledge/pwn-for-beginer/pwn-baby.md)
+  * [Write up Binary exploit](knowledge/pwn-for-beginer/write-up-binary-exploit.md)
 
 ## SQL
 
