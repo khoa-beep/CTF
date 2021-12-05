@@ -60,7 +60,8 @@
 * [PWN FOR BEGINER](knowledge/pwn-for-beginer/README.md)
   * [PWN Baby](knowledge/pwn-for-beginer/pwn-baby.md)
   * [Write up Binary exploit](knowledge/pwn-for-beginer/write-up-binary-exploit.md)
-  * [Challenge Binary exploit](knowledge/pwn-for-beginer/challenge-binary-exploit.md)
+  * [Challenge Binary exploit 1](knowledge/pwn-for-beginer/challenge-binary-exploit-1.md)
+  * [Challenge Binary exploit 2](knowledge/pwn-for-beginer/challenge-binary-exploit-2.md)
 
 ## SQL
 
