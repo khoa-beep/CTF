@@ -39,6 +39,9 @@
 * [CodeEngn](wargame/codeengn/README.md)
   * [Basic RCE L02](wargame/codeengn/basic-rce-l02.md)
   * [Basic RCE L01](wargame/codeengn/basic-rce-l01.md)
+* [PWN KR](wargame/pwn-kr/README.md)
+  * [CTF wargames Pwn Kr 1](wargame/pwn-kr/ctf-wargames-pwn-kr-1.md)
+  * [CTF wargames Pwn Kr 2](wargame/pwn-kr/ctf-wargames-pwn-kr-2.md)
 
 ## Blog Cyber
 
